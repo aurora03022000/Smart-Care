@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    android:background="#F7FFFFFF"
+    android:minWidth="19dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="#F7FFFFFF"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/customize_green"
+                app:popupTheme="@style/AppTheme.PopupOverlay"  />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/middleLayout"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:orientation="vertical"
+            android:background="@color/customize_green">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/wave">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/widgets"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Monitor your patient wherever and whenever you want using android phone via real-time update"
+                        android:textSize="11dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppinsmedium"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="140dp"
+                                android:layout_marginRight="-5dp"
+                                android:background="@drawable/border_shadow"
+                                android:orientation="vertical"
+                                android:gravity="center">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:id="@+id/patient_list_btn"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground">
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/patient"
+                                        android:background="@color/white"/>
+                                    <TextView
+                                        android:id="@+id/hello"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Monitor"
+                                        android:textSize="12dp"
+                                        android:fontFamily="@font/poppinsmedium"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="140dp"
+                                android:background="@drawable/border_shadow"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="-5dp"
+                                android:gravity="center">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:id="@+id/register_patient_btn"
+                                    android:foreground="?attr/selectableItemBackground">
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/register"
+                                        android:background="@color/white"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Admit"
+                                        android:gravity="center"
+                                        android:textSize="12dp"
+                                        android:fontFamily="@font/poppinsmedium"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!-- First and second button-->
+
+<!--                        &lt;!&ndash; third and fourth button&ndash;&gt;-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="-10dp"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:gravity="center">-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="150dp"-->
+<!--                                android:layout_height="140dp"-->
+<!--                                android:background="@drawable/border_shadow"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:layout_marginRight="-5dp"-->
+<!--                                android:gravity="center">-->
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:clickable="true"-->
+<!--                                    android:orientation="vertical"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:id="@+id/remove_patient_btn"-->
+<!--                                    android:foreground="?attr/selectableItemBackground">-->
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="40dp"-->
+<!--                                        android:layout_height="40dp"-->
+<!--                                        android:src="@drawable/remove_user"-->
+<!--                                        android:background="@color/white"/>-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="Dismiss"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:textSize="12dp"-->
+<!--                                        android:fontFamily="@font/poppinsmedium"/>-->
+<!--                                </LinearLayout>-->
+
+<!--                            </LinearLayout>-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="150dp"-->
+<!--                                android:layout_height="140dp"-->
+<!--                                android:background="@drawable/border_shadow"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:layout_marginLeft="-5dp"-->
+<!--                                android:gravity="center">-->
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:clickable="true"-->
+<!--                                    android:orientation="vertical"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:id="@+id/share_patient_btn"-->
+<!--                                    android:foreground="?attr/selectableItemBackground">-->
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="40dp"-->
+<!--                                        android:layout_height="40dp"-->
+<!--                                        android:src="@drawable/share"-->
+<!--                                        android:background="@color/white"/>-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="Share"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:textSize="12dp"-->
+<!--                                        android:fontFamily="@font/poppinsmedium"/>-->
+<!--                                </LinearLayout>-->
+
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginTop="-10dp"-->
+<!--                            android:layout_marginBottom="30dp"-->
+<!--                            android:gravity="center">-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="150dp"-->
+<!--                                android:layout_height="140dp"-->
+<!--                                android:background="@drawable/border_shadow"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:layout_marginRight="-5dp"-->
+<!--                                android:gravity="center">-->
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:clickable="true"-->
+<!--                                    android:orientation="vertical"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:id="@+id/share_menu_btn"-->
+<!--                                    android:foreground="?attr/selectableItemBackground">-->
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="40dp"-->
+<!--                                        android:layout_height="40dp"-->
+<!--                                        android:src="@drawable/share_menu_image"-->
+<!--                                        android:background="@color/white"/>-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="Share Menu"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:textSize="12dp"-->
+<!--                                        android:fontFamily="@font/poppinsmedium"/>-->
+<!--                                </LinearLayout>-->
+
+<!--                            </LinearLayout>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="150dp"-->
+<!--                                android:layout_height="140dp"-->
+<!--                                android:background="@drawable/border_shadow"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:layout_marginLeft="-5dp"-->
+<!--                                android:gravity="center">-->
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:clickable="true"-->
+<!--                                    android:orientation="vertical"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:id="@+id/information"-->
+<!--                                    android:foreground="?attr/selectableItemBackground">-->
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="40dp"-->
+<!--                                        android:layout_height="40dp"-->
+<!--                                        android:background="@color/white"-->
+<!--                                        android:src="@drawable/logs"/>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="Information"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:textSize="12dp"-->
+<!--                                        android:fontFamily="@font/poppinsmedium"/>-->
+<!--                                </LinearLayout>-->
+
+<!--                            </LinearLayout>-->
+<!--                        </LinearLayout>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginTop="40dp"-->
+<!--                            android:gravity="center">-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Activity History"-->
+<!--                                android:layout_marginRight="5dp"-->
+<!--                                android:gravity="center"/>-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:drawableStart="@drawable/history"-->
+<!--                                android:gravity="center"/>-->
+<!--                        </LinearLayout>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginBottom="20dp"-->
+<!--                            android:background="@drawable/border_shadow"-->
+<!--                            android:orientation="vertical">-->
+
+<!--&lt;!&ndash;                            <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_height="1dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_marginRight="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:background="@color/lightGray"/>&ndash;&gt;-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginLeft="20dp"-->
+<!--                                android:layout_marginRight="20dp"-->
+<!--                                android:layout_height="wrap_content">-->
+<!--                                <ScrollView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent">-->
+<!--                                    <LinearLayout-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:orientation="vertical">-->
+<!--                                        <LinearLayout-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginBottom="5dp"-->
+<!--                                            android:orientation="horizontal">-->
+<!--                                            <TextView-->
+<!--                                                android:layout_width="match_parent"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:text="Editted Patient Marlou"-->
+<!--                                                android:layout_weight="1"-->
+<!--                                                android:textSize="14sp"-->
+<!--                                                android:textStyle="italic"-->
+<!--                                                android:layout_marginRight="5dp"/>-->
+<!--                                            <TextView-->
+<!--                                                android:layout_width="wrap_content"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:text="5 Hours Ago"-->
+<!--                                                android:textSize="14sp"-->
+<!--                                                android:textStyle="italic"-->
+<!--                                                android:layout_marginRight="5dp"-->
+<!--                                                android:gravity="center"/>-->
+<!--                                        </LinearLayout>-->
+<!--&lt;!&ndash;                                        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:layout_height="1dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:layout_marginTop="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:layout_marginBottom="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:background="@color/lightGray"/>&ndash;&gt;-->
+<!--                                        <LinearLayout-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:orientation="horizontal">-->
+<!--                                            <TextView-->
+<!--                                                android:layout_width="match_parent"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:text="Admitted Jeff Attienza"-->
+<!--                                                android:layout_weight="1"-->
+<!--                                                android:textSize="14sp"-->
+<!--                                                android:textStyle="italic"-->
+<!--                                                android:layout_marginRight="5dp"/>-->
+<!--                                            <TextView-->
+<!--                                                android:layout_width="wrap_content"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:text="1 Hour Ago"-->
+<!--                                                android:textSize="14sp"-->
+<!--                                                android:textStyle="italic"-->
+<!--                                                android:layout_marginRight="5dp"-->
+<!--                                                android:gravity="center"/>-->
+<!--                                        </LinearLayout>-->
+<!--                                    </LinearLayout>-->
+
+<!--                                </ScrollView>-->
+<!--                            </LinearLayout>-->
+<!--                        </LinearLayout>-->
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer_menu">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

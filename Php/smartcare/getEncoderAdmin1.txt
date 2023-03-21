@@ -1,0 +1,18 @@
+<?php
+    require_once "conn.php";
+    require_once "validate.php";
+    
+    $sql = "SELECT * FROM room WHERE room_status ='Available' and isExist=1 ORDER BY room_number ASC";
+    $result = mysqli_query($conn, $sql);
+    
+    if($result){
+       while($row=mysqli_fetch_assoc($result)){
+            echo $row['room_number']."`";
+        } 
+    }
+
+    else{
+        echo 'failure';
+    }
+    
+?>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/customize_green"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/smart_care_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/wave"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loginForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wave"
+            android:layout_marginTop="-13dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:fadeScrollbars="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="40dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp">
+
+                    <TextView
+                        android:id="@+id/hospitalName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/customize_green"
+                        android:textSize="23dp" />
+
+                    <EditText
+                        android:id="@+id/usernameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:background="@drawable/login_input_layout"
+                        android:drawableEnd="@drawable/login_username_icon"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColorHint="@color/hint"
+                        android:textSize="14dp" />
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_marginStart="10dp"-->
+                    <!--                android:layout_marginTop="0dp"-->
+                    <!--                android:layout_marginEnd="10dp">-->
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="15dp"-->
+                    <!--                    android:layout_height="15dp"-->
+                    <!--                    android:layout_gravity="center"-->
+                    <!--                    android:background="@drawable/login_password_icon"-->
+                    <!--                    android:textSize="13dp"-->
+                    <!--                    android:layout_marginRight="2dp"-->
+                    <!--                    android:fontFamily="@font/poppinsmedium"-->
+                    <!--                    android:textColor="@color/black"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Password"-->
+                    <!--                    android:layout_marginTop="1dp"-->
+                    <!--                    android:textSize="13dp"-->
+                    <!--                    android:fontFamily="@font/poppinsmedium"-->
+                    <!--                    android:textColor="@color/black"/>-->
+
+                    <!--            </LinearLayout>-->
+                    <EditText
+                        android:id="@+id/passwordInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:background="@drawable/login_input_layout"
+                        android:drawableEnd="@drawable/login_password_icon"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColorHint="@color/hint"
+                        android:textSize="14dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:background="@drawable/register_button_layout"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/forgot_password" />
+
+                        <TextView
+                            android:id="@+id/submitContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppinsbold"
+                            android:gravity="center"
+                            android:text="Login"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/forgotPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:gravity="center"
+                            android:text="Concern about account? Click this for inquiry"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:textColor="@color/hint"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:gravity="center"
+        android:text="Version 1.0"
+        android:textColor="@color/hint"
+        android:textSize="12dp">
+
+    </TextView>
+
+
+</RelativeLayout>

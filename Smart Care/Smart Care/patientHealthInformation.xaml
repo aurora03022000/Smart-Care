@@ -1,0 +1,126 @@
+﻿<Window x:Class="Smart_Care.patientHealthInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smart_Care"
+        mc:Ignorable="d"
+        Title="patientHealthInformation" Height="722.1" Width="496.4" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="112"/>
+                <RowDefinition Height="272"/>
+            </Grid.RowDefinitions>
+
+            <Border CornerRadius="0, 0, 10, 10" Margin="0,0,0,9" >
+                <Border.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="backgroundLogin.jpg"/>
+                </Border.Background>
+                <Grid Grid.Row="0" Margin="0,0,0,1" >
+                    <Border CornerRadius="0, 0, 10, 10" Background="#0EB021" Opacity="0.9" Margin="0,0,0,-2">
+                    </Border>
+                    <Image Source="medical-record.png" Margin="96,23,318.6,23" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Height="57"/>
+                    <Label FontSize="18" Foreground="White" Content="Patient Health Information" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="168,39,78.6,35" FontFamily="Century Gothic" FontWeight="Bold" Width="243" />
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="1">
+                <Grid Margin="10,4,9.6,-301.2">
+                    <Label Content="Health Information" FontStyle="Italic" FontFamily="Century Gothic" FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="4,11,0,0" />
+                    <Grid Background="DarkGray" Height="1" VerticalAlignment="Top" Margin="4,30,0,0" Width="456" HorizontalAlignment="Left"/>
+
+                    <Grid Margin="0,30,0,207">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="80*"/>
+                            <RowDefinition Height="31*"/>
+                        </Grid.RowDefinitions>
+                        <Label Content="Patient Name: " FontWeight="Bold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="14,4,0,0"/>
+                        <TextBlock x:Name="patientNameText" Text="" FontFamily="Century Gothic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="107,9,0,0"  />
+
+                        <Label Content="Patient" FontStyle="Italic" FontFamily="Century Gothic" FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="34,50,0,0" />
+                        <Grid Background="DarkGray" Height="1" VerticalAlignment="Top" Margin="34,69,0,0" Width="397" HorizontalAlignment="Left"/>
+
+                        <Label Content="Pulse rate :" FontWeight="Bold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="44,79,0,0"/>
+                        <TextBox PreviewTextInput="TypeNumericValidation" Padding="5,7,0,0" x:Name="pulserate" Visibility="Hidden" FontFamily="Century Gothic" Margin="172,76,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252" Height="28" />
+                        <TextBlock x:Name="pulseRateText" Text="" FontFamily="Century Gothic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,84,0,0"  />
+                        
+                        <Label Content="Oxygen saturation :" FontWeight="Bold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="44,109,0,0"/>
+                        <TextBox PreviewTextInput="TypeNumericValidation" Padding="5,7,0,0" x:Name="oxygen" Visibility="Hidden"  FontFamily="Century Gothic" Margin="172,109,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252" Height="28" />
+                        <TextBlock x:Name="oxygenSaturationText" Text="" FontFamily="Century Gothic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,115,0,0"  />
+
+                        <Label Content="Body temperature :" FontWeight="Bold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="44,142,0,0"/>
+                        <TextBox PreviewTextInput="TypeNumericValidation" Padding="5,7,0,0" x:Name="bodyTemperature" Visibility="Hidden"  FontFamily="Century Gothic" Margin="172,142,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252" Height="28" />
+                        <TextBlock x:Name="bodyTemperatureText" Text="" FontFamily="Century Gothic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,148,0,0"  />
+
+
+                        <Label Content="Blood pressure :" FontWeight="Bold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="44,177,0,0"/>
+                        <TextBox Padding="5,7,0,0" x:Name="bloodPressure"  Visibility="Hidden" FontFamily="Century Gothic" Margin="172,175,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252" Height="28" />
+                        <TextBlock x:Name="bloodPressureText" Text="" FontFamily="Century Gothic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,183,0,0"  />
+
+
+                        <Label Content="Respiratory rate :" FontWeight="Bold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="44,210,0,0"/>
+                        <TextBox PreviewTextInput="TypeNumericValidation" Padding="5,7,0,0" x:Name="respiratoryRate" Visibility="Hidden"  FontFamily="Century Gothic" Margin="172,208,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252" Height="28" />
+                        <TextBlock x:Name="respiratoryText" Text="" FontFamily="Century Gothic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,216,0,0"  />
+
+
+                    </Grid>
+                    <Grid Margin="0,277,0,43">
+                        <Label Content="Room" FontStyle="Italic" FontFamily="Century Gothic" FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="34,10,0,0" />
+                        <Grid Background="DarkGray" Height="1" VerticalAlignment="Top" Margin="34,28,0,0" Width="397" HorizontalAlignment="Left"/>
+
+                        <Label Content="Temperature :" FontWeight="Bold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="44,36,0,0" Height="27" RenderTransformOrigin="0.5,0.5"/>
+                        <TextBox PreviewTextInput="TypeNumericValidation" Padding="5,7,0,0" x:Name="roomTemperature" Visibility="Hidden"  FontFamily="Century Gothic" Margin="172,34,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252" Height="28" />
+                        <TextBlock x:Name="temperatureText" Text="" FontFamily="Century Gothic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,42,0,0"  />
+
+
+                        <Label Content="Humidity :" FontWeight="Bold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="44,68,0,0" Height="27" RenderTransformOrigin="0.5,0.5"/>
+                        <TextBox PreviewTextInput="TypeNumericValidation" Padding="5,7,0,0" x:Name="humidityRoom" Visibility="Hidden"  FontFamily="Century Gothic" Margin="172,67,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252" Height="28" />
+                        <TextBlock x:Name="humidityText" Text="" FontFamily="Century Gothic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,74,0,0"  />
+
+                        <Label Content="Air quality :" FontWeight="Bold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="44,102,0,0" Height="27" RenderTransformOrigin="0.5,0.5"/>
+                        <TextBox PreviewTextInput="TypeNumericValidation" Padding="5,7,0,0" x:Name="airQuality" Visibility="Hidden"  FontFamily="Century Gothic" Margin="172,100,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252" Height="28" />
+                        <TextBlock x:Name="airQualityText" Text="" FontFamily="Century Gothic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,108,0,0"  />
+
+
+                    </Grid>
+                    <Grid Margin="0,441,0,10">
+                        <Button Visibility="Visible" x:Name="editPatientInfo" Cursor="Hand" Background="#0EB021" Foreground="White" FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="118,46,0,0" VerticalAlignment="Top" Width="243" Height="32" AutomationProperties.Name="editPatientInfo" Click="editPatientInfo_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                            <DockPanel>
+                                <Image Source="medical-record.png" Height="21" Width="24" Margin="0,0,5,0" />
+                                <TextBlock Text="Edit Patient Health Information" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Center" />
+                            </DockPanel>
+                        </Button>
+                        <Button x:Name="saveInfo" Visibility="Hidden" Cursor="Hand" Background="#0EB021" Foreground="White" FontFamily="Century Gothic"  HorizontalAlignment="Left" Margin="36,46,0,0" VerticalAlignment="Top" Width="190" Height="32" Click="saveInfo_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                            <DockPanel>
+                                <Image Source="save.png" Height="15" Width="24" Margin="-13,0,5,0" />
+                                <TextBlock Text="Save" VerticalAlignment="Center" />
+                            </DockPanel>
+                        </Button>
+                        <Button x:Name="cancel" Visibility="Hidden" Cursor="Hand" Background="Red" Foreground="White" FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="240,46,0,0" VerticalAlignment="Top" Width="190" Height="32" Click="cancel_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                            <DockPanel>
+                                <Image Source="cancel.png" Height="10" Width="24" Margin="-3,0,5,0" />
+                                <TextBlock Text="Cancel" VerticalAlignment="Center" />
+                            </DockPanel>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

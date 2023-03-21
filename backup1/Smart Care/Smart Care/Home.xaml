@@ -1,0 +1,1095 @@
+﻿<Window x:Class="Smart_Care.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smart_Care"
+        mc:Ignorable="d"
+        Title="Home" Height="682.974" Width="1295.184" WindowStartupLocation="CenterScreen" MinHeight="682.974" MinWidth="880.384">
+    <Grid Background="#c9c4c9">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="128.8"></ColumnDefinition>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border Panel.ZIndex="1"  BorderThickness="1" Grid.Row="0" 
+        CornerRadius="0,30,30,0" Background="#0EB021">
+            <Grid Grid.Column="0"  Margin="0.2,0.2,-1,8.8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="59"></RowDefinition>
+                    <RowDefinition Height="74*"></RowDefinition>
+                    <RowDefinition Height="74*"></RowDefinition>
+                    <RowDefinition Height="74*"></RowDefinition>
+                    <RowDefinition Height="74*"></RowDefinition>
+                    <RowDefinition Height="74*"></RowDefinition>
+                    <RowDefinition Height="149*"></RowDefinition>
+                    <RowDefinition Height="74*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Margin="0">
+                    <Button x:Name="indexButton" Cursor="Hand" Background="#0EB021" BorderBrush="#0EB021" AutomationProperties.Name="dashboardButton" Margin="0,0,1,-0.2" Click="indexButton_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="0,28,0,0"/>
+                            </Style>
+                        </Button.Resources>
+                        <DockPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock FontSize="16" TextAlignment="Center" Foreground="White" Text="Smart Care" FontWeight="Bold" Margin="0" VerticalAlignment="Center" FontFamily="Century Gothic"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </Button>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid Background="DarkGray" Height="2" VerticalAlignment="Top" Margin="0,-1,1,0"/>
+                    <Button x:Name="dashboardButton" Cursor="Hand" Background="#0EB021" BorderBrush="#0EB021" Click="home_button" AutomationProperties.Name="dashboardButton" Margin="0,0,1,-0.2">
+                        <DockPanel>
+                            <StackPanel Orientation="Vertical">
+                                <Image Source="monitor.png" Width="33" Height="28" Stretch="Fill" />
+                                <TextBlock Text="Dashboard" Foreground="White" FontFamily="Century Gothic"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </Button>
+                </Grid>
+
+                <Grid Grid.Row="2" >
+                    <Grid Background="DarkGray" Height="2" VerticalAlignment="Top" Margin="0,-1,1,0" Grid.ColumnSpan="2"/>
+                    <Button Cursor="Hand" Background="#0EB021" BorderBrush="#0EB021" Click="device_button" Margin="0,0,1,-0.2" Grid.ColumnSpan="2">
+                        <DockPanel>
+                            <StackPanel Orientation="Vertical">
+                                <Image Source="ecg-monitor.png" Width="33" Height="28" Stretch="Fill" Margin="-3,0,0,0"/>
+                                <TextBlock Text="Device" Foreground="White" FontFamily="Century Gothic"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </Button>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Grid Background="DarkGray" Height="3" VerticalAlignment="Top" Margin="0,-1,1,0"/>
+                    <Button Cursor="Hand" Background="#0EB021" BorderBrush="#0EB021" Click="history_button" Margin="0,0,1,-0.2">
+                        <DockPanel>
+                            <StackPanel Orientation="Vertical">
+                                <Image Source="parchment.png" Width="33" Height="28" Stretch="Fill"/>
+                                <TextBlock Text="History" Foreground="White" FontFamily="Century Gothic"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </Button>
+                </Grid>
+
+                <Grid Grid.Row="4" >
+                    <Grid Background="DarkGray" Height="3" VerticalAlignment="Top" Margin="0,-1,1,0" />
+                    <Button Cursor="Hand" Background="#0EB021" BorderBrush="#0EB021" Click="contact_button" Margin="0,0,1,-0.2">
+                        <DockPanel>
+                            <StackPanel Orientation="Vertical">
+                                <Image Source="hospital.png" Width="33" Height="28" Stretch="Fill" />
+                                <TextBlock Text="Hospital" Foreground="White" FontFamily="Century Gothic"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </Button>
+                </Grid>
+
+                <Grid Grid.Row="5">
+                    <Grid Background="DarkGray" Height="2" VerticalAlignment="Top" Margin="0,-1,1,0" />
+                    <Button Cursor="Hand" Background="#0EB021" BorderBrush="#0EB021" Click="about_button" Margin="0,0,1,-0.2">
+                        <DockPanel>
+                            <StackPanel Orientation="Vertical">
+                                <Image Source="mobile-phone.png" Width="33" Height="28" Stretch="Fill" />
+                                <TextBlock Text="Application" Foreground="White" FontFamily="Century Gothic"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="5" Background="DarkGray" Height="1" VerticalAlignment="Top" Margin="0,72.6,1,0" Grid.RowSpan="2" />
+                <Grid Grid.Row="7" Margin="0,10.6,0,-8.6">
+                    <Grid Background="DarkGray" Height="2" VerticalAlignment="Top" Margin="0,-2,1,0" Grid.ColumnSpan="2"/>
+                    <Button Cursor="Hand"  Background="#0EB021" BorderBrush="#0EB021" Click="Button_Click" Margin="0,-1,1,-0.2" Grid.ColumnSpan="2">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="0,0,30,0"/>
+                            </Style>
+                        </Button.Resources>
+                        <DockPanel>
+                            <StackPanel Orientation="Vertical">
+                                <Image Source="logout.png" Width="33" Height="28" Stretch="Fill" />
+                                <TextBlock Text="Logout" Foreground="White"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <!-- MAIN -->
+        <Grid Background="#c9c4c9" Margin="0.2,0,-0.2,0.4" Grid.Column="1" >
+            <Image Source="backgroundLogin.jpg" Stretch="Fill" Margin="-27,0,0,-0.8" Opacity="0.36" />
+            <Grid x:Name="indexGrid" Grid.Row="0" Margin="338,50,338,162.2" Opacity="0.85" Visibility="Visible">
+                <Grid Grid.Row="0" Margin="-195,61,-211,-51.6" >
+
+                    <Border BorderBrush="White" BorderThickness="3" CornerRadius="10" Background="#0EB021" Opacity="0.9" Margin="0,0,0,-1.8">
+
+                    </Border>
+                    <Image Source="applicationLogo.png" Margin="311,45,338,152.2" Stretch="Fill" />
+
+                    <Label FontSize="25" Foreground="White" Content="Welcome to Smart Care Admin" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="260,254,236,135.2" FontFamily="Century Gothic" FontWeight="Bold" Width="394" Height="43" />
+                    <Grid Background="White" Height="1" VerticalAlignment="Top" Margin="46,311,46,0"/>
+                    <Label x:Name="hospitalName" FontSize="20" Foreground="White" VerticalAlignment="Center" Margin="10,325,10,64.2" FontFamily="Century Gothic" Height="43" FontStyle="Italic" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+
+                </Grid>
+            </Grid>
+
+            <!-- DASHBOARD -->
+            <Grid x:Name="homeGrid" AutomationProperties.Name="homeGrid" Visibility="Hidden" Margin="0,0,1,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="104.8"></RowDefinition>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Margin="0,0,0,3" >
+                    <Button  x:Name="medicalStaffButton" Background="#0EB021" Foreground="White"  Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-180,39,0,0" Height="34" Width="192"  FontSize="11" FontWeight="Normal" AutomationProperties.Name="medicalStaffButton" Click="medicalStaffButton_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="7,0,0,7"/>
+                            </Style>
+                        </Button.Resources>
+                        <DockPanel>
+                            <Image Source="staff.png" Height="14" Width="19" />
+                            <TextBlock x:Name="staff_button_txt" Text="Medical Staff" FontFamily="Century Gothic"/>
+                        </DockPanel>
+                    </Button>
+                    <Button x:Name="patientButton" Background="#0EB021" Foreground="White" Cursor="Hand" HorizontalAlignment="Center" Margin="203,39,0,0" Height="34" Width="192"  VerticalAlignment="Top"  FontSize="11" FontWeight="Normal" AutomationProperties.Name="patientButton" Click="patientButton_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="0,7,7,0"/>
+                            </Style>
+                        </Button.Resources>
+                        <DockPanel>
+                            <Image Source="patient.png" Height="20" Width="24" />
+                            <TextBlock x:Name="patient_button_txt"  Text="Patient" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Century Gothic"/>
+                        </DockPanel>
+                    </Button>
+                </Grid>
+                <!--<Grid Background="#0EB021" Height="1" Margin="121,85,119,0" VerticalAlignment="Top" Grid.RowSpan="2"/>-->
+                <Grid Grid.Row="1" Margin="0,1.2,0,-0.4">
+                    <!-- STAFF dashboard -->
+
+                    <Grid x:Name="staffMainGrid" Margin="0,0,-0.8,0" Visibility="Visible" AutomationProperties.Name="staffMainGrid" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True">
+                        <Grid ScrollViewer.HorizontalScrollBarVisibility="Auto" UseLayoutRounding="False" Margin="0,0,0.2,0">
+                            <TextBox FontFamily="Century Gothic" Visibility="Visible" x:Name="search" HorizontalAlignment="Left" Height="31" Margin="211,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Padding="4,6,0,0" AutomationProperties.Name="search"/>
+                            <ComboBox Cursor="Hand" x:Name="genderComboBoxItem" Visibility="Hidden" HorizontalAlignment="Left" Margin="211,6,0,0" VerticalAlignment="Top" Padding="8,8,0,0" Width="186" Height="31" AutomationProperties.Name="genderComboBoxItem" SelectionChanged="genderComboBoxItem_SelectionChanged" FontFamily="Century Gothic">
+                                <ComboBoxItem>Male</ComboBoxItem>
+                                <ComboBoxItem>Female</ComboBoxItem>
+                            </ComboBox>
+                            <DatePicker Background="White" Visibility="Hidden" x:Name="datePickerSearch" HorizontalAlignment="Left" Height="31" Margin="211,6,0,0" VerticalAlignment="Top" Width="186" Padding="4,6,0,0" FontFamily="Century Gothic"></DatePicker>
+                            <TextBox x:Name="number" Visibility="Hidden" PreviewTextInput="TypeNumericValidation" HorizontalAlignment="Left" Height="31" Margin="211,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Padding="4,6,0,0" AutomationProperties.Name="number" FontFamily="Century Gothic"/>
+
+                            <ComboBox Cursor="Hand" x:Name="staffComboBoxItem" HorizontalAlignment="Left" Margin="20,6,0,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="staffComboBoxItem" SelectionChanged="staffComboBoxItem_SelectionChanged" Padding="8,8,0,0" FontFamily="Century Gothic">
+                                <ComboBoxItem FontFamily="Century Gothic">Medical Staff Name</ComboBoxItem>
+                                <ComboBoxItem FontFamily="Century Gothic">Username</ComboBoxItem>
+                                <ComboBoxItem FontFamily="Century Gothic">Gender</ComboBoxItem>
+                                <ComboBoxItem FontFamily="Century Gothic">Birthdate</ComboBoxItem>
+                                <ComboBoxItem FontFamily="Century Gothic">Address</ComboBoxItem>
+                                <ComboBoxItem FontFamily="Century Gothic">Number</ComboBoxItem>
+                                <ComboBoxItem FontFamily="Century Gothic">Date Registered</ComboBoxItem>
+                            </ComboBox>
+                            <Button FontFamily="Century Gothic" Cursor="Hand" x:Name="searchButton" HorizontalAlignment="Left" Margin="402,6,0,0" VerticalAlignment="Top" Width="95" Height="31" AutomationProperties.Name="searchButton" Click="searchButton_Click">
+                                <Button.Resources>
+                                    <Style TargetType="Border">
+                                        <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                                    </Style>
+                                </Button.Resources>
+                                <DockPanel>
+                                    <Image Source="search.png" Height="14" Width="20" RenderTransformOrigin="0.482,0.712" />
+                                    <TextBlock TextAlignment="Center" FontWeight="Bold" Text="Search" />
+                                </DockPanel>
+                            </Button>
+                            <Border CornerRadius="10">
+                                <DataGrid BorderBrush="White" BorderThickness="2"  HeadersVisibility="Column" CanUserReorderColumns="False" Background="White" CanUserResizeColumns="False" CanUserResizeRows="False" ItemsSource="{Binding staffData}" x:Name="medicalStaffGrid" AutoGenerateColumns="False"  Margin="20,42,20,20" AutomationProperties.Name="medicalStaffGrid" CanUserSortColumns="False" >
+
+                                    <DataGrid.ColumnHeaderStyle>
+                                        <Style TargetType="Control">
+                                            <Setter Property="FontFamily" Value="Century Gothic" />
+                                            <Setter Property="Foreground" Value="White"/>
+                                            <Setter Property="Background" Value="DarkGray"/>
+                                            <Setter Property="Padding" Value="10, 5, 5, 5"/>
+                                            <Setter Property="BorderBrush" Value="Black"/>
+                                            <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                                        </Style>
+                                    </DataGrid.ColumnHeaderStyle>
+                                    <DataGrid.CellStyle>
+                                        <Style TargetType="DataGridCell">
+                                            <Setter Property="Padding" Value="10, 5, 5, 2"/>
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                                        <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                                        </Border>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </DataGrid.CellStyle>
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn IsReadOnly="True" Visibility="Visible" Header="ID" Binding="{Binding id}" FontWeight="Bold"/>
+                                        <DataGridTextColumn IsReadOnly="True" Width="*" CanUserSort="False" Header="Medical Staff Name" Binding="{Binding staff_name}" FontFamily="Century Gothic"/>
+                                        <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic"  MinWidth="100" CanUserSort="False" Header="Username" Binding="{Binding username}"/>
+                                        <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic"  MinWidth="100" Width="Auto" Header="Gender" CanUserSort="False" CanUserResize="False" Binding="{Binding gender}"/>
+                                        <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" Width="*" Header="Address" CanUserSort="False" Binding="{Binding address}"/>
+                                        <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic"  MinWidth="100" x:Name="birthdateColumn" Header="Birthdate" Visibility="Visible" CanUserSort="False" CanUserResize="False" Binding="{Binding dependent}"/>
+                                        <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic"  MinWidth="100" x:Name="numberColumn" Header="Number" Visibility="Hidden" CanUserSort="False" CanUserResize="False" Binding="{Binding dependent}"/>
+                                        <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic"  MinWidth="100" x:Name="registeredColumn" Header="Registered Date" Visibility="Hidden" CanUserSort="False" CanUserResize="False" Binding="{Binding dependent}"/>
+                                        <DataGridTemplateColumn IsReadOnly="True" HeaderStyle="{StaticResource CenterGridHeaderStyle}" Header="View" MinWidth="50" CanUserSort="False" CanUserResize="False">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button Name="btnView" Padding="5, 2, 5, 2" Cursor="Hand" Click="btnView_Click">
+                                                        <DockPanel>
+                                                            <Image Source="eyes.png" Height="18" Width="19"/>
+                                                        </DockPanel>
+                                                    </Button>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTemplateColumn IsReadOnly="True"  HeaderStyle="{StaticResource CenterGridHeaderStyle}" Header="Delete" MinWidth="50" CanUserSort="False" CanUserResize="False">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button Name="btnDelete" Padding="5, 2, 5, 2" Cursor="Hand" Click="btnDelete_Click">
+                                                        <DockPanel>
+                                                            <Image Source="delete.png" Height="18" Width="19"/>
+                                                        </DockPanel>
+                                                    </Button>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Border>
+                            <Button Cursor="Hand" x:Name="registerStaff" Margin="0,6,19.8,0" VerticalAlignment="Top" Height="31" AutomationProperties.Name="registerStaff" HorizontalAlignment="Right" Width="178" Click="RegisterStaff_Click" FontFamily="Century Gothic">
+                                <Button.Resources>
+                                    <Style TargetType="Border">
+                                        <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                                    </Style>
+                                </Button.Resources>
+                                <DockPanel>
+                                    <Image Source="staff.png" Height="16" Width="25" />
+                                    <TextBlock FontWeight="Bold" Text="Register Medical Staff"/>
+                                </DockPanel>
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <!--STAFF dashboard-->
+
+                    <!-- PATIENT dashboard -->
+                    <Grid x:Name="patientMainGrid" AutomationProperties.Name="patientMainGrid" Margin="0,0,-1.8,0" Visibility="Hidden">
+                        <TextBox FontFamily="Century Gothic" Visibility="Visible" x:Name="searchPatient" HorizontalAlignment="Left" Height="31" Margin="211,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Padding="4,6,0,0" AutomationProperties.Name="searchPatient"/>
+                        <ComboBox Cursor="Hand" x:Name="genderComboBoxItemPatient" Visibility="Hidden" HorizontalAlignment="Left" Margin="211,6,0,0" VerticalAlignment="Top" Padding="8,8,0,0" Width="186" Height="31" AutomationProperties.Name="genderComboBoxItemPatient" SelectionChanged="genderComboBoxItemPatient_SelectionChanged" FontFamily="Century Gothic" >
+                            <ComboBoxItem>Male</ComboBoxItem>
+                            <ComboBoxItem>Female</ComboBoxItem>
+                        </ComboBox>
+                        <DatePicker Background="White" Visibility="Hidden" x:Name="datePickerSearchPatient" HorizontalAlignment="Left" Height="31" Margin="211,6,0,0" VerticalAlignment="Top" Width="186" Padding="4,6,0,0" FontFamily="Century Gothic"></DatePicker>
+                        <TextBox x:Name="numberPatient" Visibility="Hidden" PreviewTextInput="TypeNumericValidation" HorizontalAlignment="Left" Height="31" Margin="211,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Padding="4,6,0,0" AutomationProperties.Name="numberPatient" FontFamily="Century Gothic"/>
+
+                        <ComboBox Cursor="Hand" x:Name="patientComboBoxItem" HorizontalAlignment="Left" Margin="20,6,0,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="patientComboBoxItem" Padding="8,8,0,0" FontFamily="Century Gothic" SelectionChanged="patientComboBoxItem_SelectionChanged">
+                            <ComboBoxItem>Patient Name</ComboBoxItem>
+                            <ComboBoxItem>Gender</ComboBoxItem>
+                            <ComboBoxItem>Birthdate</ComboBoxItem>
+                            <ComboBoxItem>Address</ComboBoxItem>
+                            <ComboBoxItem>Number</ComboBoxItem>
+                            <ComboBoxItem>Disease</ComboBoxItem>
+                            <ComboBoxItem>Device ID</ComboBoxItem>
+                            <ComboBoxItem>Room</ComboBoxItem>
+                            <ComboBoxItem>Date Admitted</ComboBoxItem>
+                        </ComboBox>
+                        <Button FontFamily="Century Gothic" Cursor="Hand" x:Name="searchButtonPatient" HorizontalAlignment="Left" Margin="402,6,0,0" VerticalAlignment="Top" Width="95" Height="31" AutomationProperties.Name="searchButtonPatient" Click="searchButtonPatient_Click" >
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                                </Style>
+                            </Button.Resources>
+                            <DockPanel>
+                                <Image Source="search.png" Height="14" Width="20" RenderTransformOrigin="0.482,0.712" />
+                                <TextBlock TextAlignment="Center" FontWeight="Bold" Text="Search" />
+                            </DockPanel>
+                        </Button>
+                        <Button x:Name="admit_patient_button" Cursor="Hand" Margin="0,6,19.8,0" VerticalAlignment="Top" Height="31" HorizontalAlignment="Right" Width="178"  FontFamily="Century Gothic" Click="admit_patient_button_Button_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                                </Style>
+                            </Button.Resources>
+                            <DockPanel>
+                                <Image Source="add_patient.png" Height="16" Width="25" />
+                                <TextBlock FontWeight="Bold" Text="Admit Patient"/>
+                            </DockPanel>
+                        </Button>
+                        <DataGrid BorderBrush="White" BorderThickness="2"  x:Name="patientGrid" Background="White" HeadersVisibility="Column" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserResizeRows="False"  CanUserSortColumns="False" AutoGenerateColumns="False"  Margin="20,42,20,20" >
+
+                            <DataGrid.ColumnHeaderStyle>
+                                <Style TargetType="Control">
+                                    <Setter Property="FontFamily" Value="Century Gothic" />
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Background" Value="DarkGray"/>
+                                    <Setter Property="Padding" Value="10, 5, 5, 5"/>
+                                    <Setter Property="BorderBrush" Value="Black"/>
+                                    <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                                </Style>
+                            </DataGrid.ColumnHeaderStyle>
+                            <DataGrid.CellStyle>
+                                <Style TargetType="DataGridCell">
+                                    <Setter Property="Padding" Value="10, 5, 5, 2"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                                <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                                    <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </DataGrid.CellStyle>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn IsReadOnly="True" Visibility="Visible" Header="ID" Binding="{Binding patient_id}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" Width="*" CanUserSort="False" Header="Patient Name" Binding="{Binding patient_name}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" Header="Gender" Width="Auto"  MinWidth="100" CanUserSort="False" CanUserResize="False" Binding="{Binding patient_gender}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" Header="Address" Width="*" CanUserSort="False" CanUserResize="False" Binding="{Binding patient_address}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" x:Name="patientBirthdateColumn" Width="Auto" MinWidth="150" Header="Birthdate" Visibility="Visible" CanUserSort="False" CanUserResize="False" Binding="{Binding dependent}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" x:Name="patientNumberColumn" Header="Number"  MinWidth="130" Visibility="Hidden" CanUserSort="False" CanUserResize="False" Binding="{Binding dependent}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" x:Name="patientDiseaseColumn" Header="Disease" Width="*"  Visibility="Hidden" CanUserSort="False" CanUserResize="False" Binding="{Binding dependent}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" x:Name="patientDeviceIDColumn" Header="Device ID"  MinWidth="130" Visibility="Hidden" CanUserSort="False" CanUserResize="False" Binding="{Binding dependent}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" x:Name="patientRoomColumn" Header="Room"  MinWidth="100" Visibility="Hidden" CanUserSort="False" CanUserResize="False" Binding="{Binding dependent}"/>
+                                <DataGridTextColumn Visibility="Hidden" x:Name="patientAdmitColumn" Header="Date Admitted"  MinWidth="100" CanUserSort="False" CanUserResize="False" Binding="{Binding dependent}"/>
+                                <DataGridTemplateColumn IsReadOnly="True"  Header="View" CanUserSort="False" MinWidth="50" CanUserResize="False">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Name="btnView" Cursor="Hand" Click="btnViewPatient_Click">
+                                                <DockPanel>
+                                                    <Image Source="eyes.png" Height="18" Width="19"/>
+                                                </DockPanel>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTemplateColumn IsReadOnly="True"  Header="Health" CanUserSort="False" MinWidth="50" CanUserResize="False">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Name="btnView" Cursor="Hand" Click="btnViewHealthPatient_Click">
+                                                <DockPanel>
+                                                    <Image Source="medical-record.png" Height="18" Width="19"/>
+                                                </DockPanel>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTemplateColumn IsReadOnly="True"  Header="Share" MinWidth="50" CanUserSort="False" CanUserResize="False">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Name="btnShare" Cursor="Hand" Click="btnSharePatient_Click">
+                                                <DockPanel>
+                                                    <Image Source="share.png" Height="18" Width="19"/>
+                                                </DockPanel>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTemplateColumn IsReadOnly="True"  Header="Dismiss" CanUserSort="False" MinWidth="50" CanUserResize="False">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Name="btnDelete" Cursor="Hand" Click="btnDeletePatient_Click">
+                                                <DockPanel>
+                                                    <Image Source="dismiss.png" Height="18" Width="19"/>
+                                                </DockPanel>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <!-- PATIENT dashboard -->
+                    </Grid>
+
+
+
+                </Grid>
+            </Grid>
+            <!-- DASHBOARD end -->
+
+
+            <!-- DEVICE -->
+            <Grid  x:Name="deviceGrid" AutomationProperties.Name="deviceGrid" Visibility="Hidden">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="227"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1" Margin="21,0,22,0">
+                        <Grid Background="White" VerticalAlignment="Top" HorizontalAlignment="Left" Height="200" Width="1125" Margin="-5,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="212*"/>
+                                <ColumnDefinition Width="617*"/>
+                                <ColumnDefinition Width="296*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,439.8,0" >
+                                <Label Content="Device Information" FontStyle="Italic" FontFamily="Century Gothic" FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="29,15,0,0" />
+                                <Image Source="register_device.png" VerticalAlignment="Top" HorizontalAlignment="Left"  Height="93" Width="100" Stretch="Fill" Margin="75,63,0,0" />
+
+                            </Grid>
+
+                            <Grid Grid.Column="1" Margin="5,0,226.8,0" Grid.ColumnSpan="2">
+                                <Grid Background="DarkGray" Height="1" VerticalAlignment="Top" Margin="-187,37,-176,0" Width="1044" HorizontalAlignment="Left"/>
+
+                                <TextBlock Text="Device ID" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Century Gothic" Margin="45,69,0,0" FontWeight="Bold"/>
+                                <TextBlock x:Name="deviceidText" Text="-" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="45,88,0,0" FontStyle="Italic" />
+
+                                <TextBlock Text="Status" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Century Gothic" Margin="45,131,0,0" FontWeight="Bold"/>
+                                <TextBlock x:Name="deviceStatusText" Text="-" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="45,150,0,0" FontStyle="Italic" />
+
+                                <TextBlock Text="IP Address" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Century Gothic" Margin="225,69,0,0" FontWeight="Bold"/>
+                                <TextBlock x:Name="IPAddressText" Text="-" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="225,88,0,0" FontStyle="Italic" />
+
+                                <TextBlock Text="Current User" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Century Gothic" Margin="225,131,0,0" FontWeight="Bold"/>
+                                <TextBlock x:Name="currentUserText" Text="-" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="225,151,0,0" FontStyle="Italic" />
+
+                                <TextBlock Text="Current Room" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Century Gothic" Margin="423,69,0,0" FontWeight="Bold"/>
+                                <TextBlock x:Name="currentRoomText" Text="-" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="423,89,0,0" FontStyle="Italic" />
+                            </Grid>
+                            <Grid Grid.Column="2" Margin="0.2,0,-0.2,0">
+                                <Button Background="#0EB021" Foreground="White" x:Name="registerDeviceBtn"  Cursor="Hand" HorizontalAlignment="Center" Margin="0,97,120,67" FontSize="11" VerticalAlignment="Center" Width="176" Height="36" FontWeight="Normal" AutomationProperties.Name="loginButton" FontFamily="Century Gothic" Click="registerDeviceBtn_Click">
+                                    <Button.Resources>
+                                        <Style TargetType="Border">
+                                            <Setter Property="CornerRadius" Value="5"/>
+                                        </Style>
+                                    </Button.Resources>
+                                    <DockPanel>
+                                        <Image Source="register_device.png" Height="21" Width="24" Margin="0,0,2,0" />
+                                        <TextBlock Text="Register Device" VerticalAlignment="Center" />
+                                    </DockPanel>
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="387" Margin="11,29,11,10.4" Width="1138">
+                        <DataGrid BorderThickness="2" HeadersVisibility="Column"  CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserResizeRows="False"  CanUserSortColumns="False" AutoGenerateColumns="False" Background="White" x:Name="deviceDataGrid" HorizontalAlignment="Left" Margin="10,46,0,0" Width="1118" AutomationProperties.Name="deviceDataGrid" Height="321" VerticalAlignment="Top" BorderBrush="White">
+                            <DataGrid.ColumnHeaderStyle>
+                                <Style TargetType="Control">
+                                    <Setter Property="FontFamily" Value="Century Gothic" />
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Background" Value="DarkGray"/>
+                                    <Setter Property="Padding" Value="10, 5, 5, 5"/>
+                                    <Setter Property="BorderBrush" Value="Black"/>
+                                    <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                                </Style>
+                            </DataGrid.ColumnHeaderStyle>
+                            <DataGrid.CellStyle>
+                                <Style TargetType="DataGridCell">
+                                    <Setter Property="Padding" Value="10, 5, 5, 2"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                                <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                                    <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </DataGrid.CellStyle>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" Width="*" CanUserSort="False" CanUserResize="False" Header="Device ID" Binding="{Binding device_id}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" Width="*" Header="Status" CanUserSort="False" CanUserResize="False" Binding="{Binding device_status}"/>
+                                <DataGridTextColumn IsReadOnly="True" FontFamily="Century Gothic" Width="*" CanUserSort="False" CanUserResize="False" Header="IP Address" Binding="{Binding ipaddress}"/>
+                                <DataGridTemplateColumn IsReadOnly="True" Header="View" CanUserSort="False" CanUserResize="False">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Name="btnView" FontFamily="Century Gothic" Cursor="Hand" Click="btnViewDevice_Click">
+                                                <DockPanel>
+                                                    <Image Source="eyes.png" Height="18" Width="19"/>
+                                                </DockPanel>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTemplateColumn IsReadOnly="True" Header="Delete" CanUserSort="False" CanUserResize="False">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Name="btnDelete" FontFamily="Century Gothic" Cursor="Hand" Click="btnDeleteDevice_Click">
+                                                <DockPanel>
+                                                    <Image Source="delete.png" Height="18" Width="19"/>
+                                                </DockPanel>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <ComboBox Cursor="Hand" x:Name="deviceCategory" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="186" Height="31" SelectionChanged="deviceCategory_SelectionChanged" FontFamily="Century Gothic" Padding="8,8,0,0">
+                            <ComboBoxItem>Device ID</ComboBoxItem>
+                            <ComboBoxItem>Status</ComboBoxItem>
+                            <ComboBoxItem>IP Addresses</ComboBoxItem>
+                        </ComboBox>
+                        <TextBox x:Name="deviceIDTextBox" Width="186" Height="31" HorizontalAlignment="Left" Margin="201,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Padding="5,6,0,0" FontFamily="Century Gothic" PreviewTextInput="TypeNumericValidation"/>
+                        <TextBox x:Name="deviveIPTextBox" Width="186" Height="31" HorizontalAlignment="Left" Margin="201,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Padding="5,6,0,0" FontFamily="Century Gothic"/>
+                        <ComboBox Cursor="Hand" x:Name="statusComboBox" HorizontalAlignment="Left" Margin="201,10,0,0" VerticalAlignment="Top" Visibility="Hidden" Width="186" Height="31" Padding="8,8,0,0" FontFamily="Century Gothic" SelectionChanged="statusComboBox_SelectionChanged_1">
+                            <ComboBoxItem>Available</ComboBoxItem>
+                            <ComboBoxItem>Not Available</ComboBoxItem>
+                        </ComboBox>
+
+                        <Button FontFamily="Century Gothic" Cursor="Hand" x:Name="searchButtonDevice" HorizontalAlignment="Left" Margin="392,10,0,0" VerticalAlignment="Top" Width="95" Height="31" AutomationProperties.Name="searchButton" Click="searchButtonDevice_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                                </Style>
+                            </Button.Resources>
+                            <DockPanel>
+                                <Image Source="search.png" Height="14" Width="20" RenderTransformOrigin="0.482,0.712" />
+                                <TextBlock TextAlignment="Center" FontWeight="Bold" Text="Search" />
+                            </DockPanel>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <!-- DEVICE end -->
+
+
+            <!-- HISTORY -->
+            <Grid x:Name="historyGrid" AutomationProperties.Name="historyGrid" Visibility="Hidden">
+                <ComboBox Cursor="Hand" x:Name="historyComboBox" HorizontalAlignment="Left" Margin="20,35,0,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="historyComboBox" SelectionChanged="historyComboBox_SelectionChanged" FontFamily="Century Gothic" Padding="8,8,0,0" >
+                    <ComboBoxItem>History Log</ComboBoxItem>
+                    <ComboBoxItem>Patient Health Logs</ComboBoxItem>
+                    <ComboBoxItem>Patient History</ComboBoxItem>
+                    <ComboBoxItem>Medical Staff History</ComboBoxItem>
+                </ComboBox>
+
+                <Grid x:Name="patientHistoryFiltersGrid" Visibility="Hidden" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <ComboBox Cursor="Hand" x:Name="patientHistoryFilter"  HorizontalAlignment="Left" Margin="211,35,0,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="historyComboBox" FontFamily="Century Gothic" Padding="8,8,0,0" SelectionChanged="patientHistoryFilter_SelectionChanged" >
+                        <ComboBoxItem>Patient Name</ComboBoxItem>
+                        <ComboBoxItem>Gender</ComboBoxItem>
+                        <ComboBoxItem>Birthdate</ComboBoxItem>
+                        <ComboBoxItem>Address</ComboBoxItem>
+                        <ComboBoxItem>Number</ComboBoxItem>
+                        <ComboBoxItem>Disease</ComboBoxItem>
+                        <ComboBoxItem>Device ID</ComboBoxItem>
+                        <ComboBoxItem>Room</ComboBoxItem>
+                        <ComboBoxItem>Encoder Name</ComboBoxItem>
+                        <ComboBoxItem>Date Admitted</ComboBoxItem>
+                        <ComboBoxItem>Date Dismissed</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBox x:Name="searchHistoryTextBox"  HorizontalAlignment="Left" Margin="402,35,-191.2,0" Visibility="Visible" VerticalAlignment="Top" Width="186" Height="31" FontFamily="Century Gothic" Padding="5,7,0,0"/>
+                    <ComboBox Visibility="Hidden" Cursor="Hand" x:Name="filterPatientHistoryGender" HorizontalAlignment="Left" Margin="402,35,-191.2,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="historyComboBox" FontFamily="Century Gothic" Padding="8,8,0,0" SelectionChanged="filterPatientHistoryGender_SelectionChanged" >
+                        <ComboBoxItem>Male</ComboBoxItem>
+                        <ComboBoxItem>Female</ComboBoxItem>
+                    </ComboBox>
+                    <DatePicker Visibility="Hidden"  x:Name="searchBirthDatePatientHistory" Background="White" Width="186" Height="31" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="402,35,-191.2,0" FontFamily="Century Gothic" Padding="6,6,2,2" Text="d"/>
+                    <TextBox x:Name="searchHistoryTextBoxNumber" PreviewTextInput="TypeNumericValidation" HorizontalAlignment="Left" Margin="402,35,-191.2,0" Visibility="Hidden" VerticalAlignment="Top" Width="186" Height="31" FontFamily="Century Gothic" Padding="5,7,0,0"/>
+
+                    <Button FontFamily="Century Gothic" Cursor="Hand" x:Name="searchButtonPatientHistory" HorizontalAlignment="Left" Margin="593,35,0,0" VerticalAlignment="Top" Width="95" Height="31" AutomationProperties.Name="searchButtonPatientHistory" Click="searchButtonPatientHistory_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                            </Style>
+                        </Button.Resources>
+                        <DockPanel>
+                            <Image Source="search.png" Height="14" Width="20" RenderTransformOrigin="0.482,0.712" />
+                            <TextBlock TextAlignment="Center" FontWeight="Bold" Text="Search" />
+                        </DockPanel>
+                    </Button>
+                </Grid>
+
+                <Grid x:Name="medicalStaffHistoryFiltersGrid" Visibility="Hidden" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <ComboBox Cursor="Hand" x:Name="medicalStaffComboBoxFilter"  HorizontalAlignment="Left" Margin="211,35,0,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="historyComboBox" FontFamily="Century Gothic" Padding="8,8,0,0" SelectionChanged="medicalStaffComboBoxFilter_SelectionChanged" >
+                        <ComboBoxItem>Username</ComboBoxItem>
+                        <ComboBoxItem>Medical Staff Name</ComboBoxItem>
+                        <ComboBoxItem>Gender</ComboBoxItem>
+                        <ComboBoxItem>Birthdate</ComboBoxItem>
+                        <ComboBoxItem>Address</ComboBoxItem>
+                        <ComboBoxItem>Number</ComboBoxItem>
+                        <ComboBoxItem>Date Registered</ComboBoxItem>
+                        <ComboBoxItem>Date Deleted</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBox x:Name="searcStaffUsernameTextBox"  HorizontalAlignment="Left" Margin="402,35,-191.2,0" Visibility="Hidden" VerticalAlignment="Top" Width="186" Height="31" FontFamily="Century Gothic" Padding="5,7,0,0"/>
+                    <ComboBox Visibility="Hidden" Cursor="Hand" x:Name="filterStaffHistoryGender" HorizontalAlignment="Left" Margin="402,35,-191.2,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="historyComboBox" FontFamily="Century Gothic" Padding="8,8,0,0" SelectionChanged="filterStaffHistoryGender_SelectionChanged" >
+                        <ComboBoxItem>Male</ComboBoxItem>
+                        <ComboBoxItem>Female</ComboBoxItem>
+                    </ComboBox>
+                    <DatePicker Visibility="Hidden"  x:Name="searchBirthDateStaffHistory" Background="White" Width="186" Height="31" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="402,35,-191.2,0" FontFamily="Century Gothic" Padding="6,6,2,2" Text="d"/>
+                    <TextBox x:Name="searchStaffHistoryTextBoxNumber" PreviewTextInput="TypeNumericValidation" HorizontalAlignment="Left" Margin="402,35,-191.2,0" Visibility="Hidden" VerticalAlignment="Top" Width="186" Height="31" FontFamily="Century Gothic" Padding="5,7,0,0"/>
+
+                    <Button FontFamily="Century Gothic" Cursor="Hand" x:Name="searchButtonStaffHistory" HorizontalAlignment="Left" Margin="593,35,0,0" VerticalAlignment="Top" Width="95" Height="31" AutomationProperties.Name="searchButtonStaffHistory" Click="searchButtonStaffHistory_Click" >
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                            </Style>
+                        </Button.Resources>
+                        <DockPanel>
+                            <Image Source="search.png" Height="14" Width="20" RenderTransformOrigin="0.482,0.712" />
+                            <TextBlock TextAlignment="Center" FontWeight="Bold" Text="Search" />
+                        </DockPanel>
+                    </Button>
+                </Grid>
+
+                <Grid x:Name="historyLogFilters" Visibility="Hidden" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <ComboBox Cursor="Hand" x:Name="historyLogFilter"  HorizontalAlignment="Left" Margin="211,35,0,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="historyComboBox" FontFamily="Century Gothic" Padding="8,8,0,0" SelectionChanged="historyLogFilter_SelectionChanged" >
+                        <ComboBoxItem>Activity</ComboBoxItem>
+                        <ComboBoxItem>Medical Staff Name</ComboBoxItem>
+                        <ComboBoxItem>Activity Date</ComboBoxItem>
+                        <ComboBoxItem>Activity Time</ComboBoxItem>
+                    </ComboBox>
+                    <ComboBox Cursor="Hand" x:Name="filterActivity" HorizontalAlignment="Left" Margin="402,35,-191.2,0" VerticalAlignment="Top" Width="250" Height="31" AutomationProperties.Name="historyComboBox" FontFamily="Century Gothic" Padding="8,8,0,0" SelectionChanged="filterActivity_SelectionChanged" >
+                        <ComboBoxItem>All Activity</ComboBoxItem>
+                        <ComboBoxItem>Admitted Patient</ComboBoxItem>
+                        <ComboBoxItem>Dismissed Patient</ComboBoxItem>
+                        <ComboBoxItem>Updated Patient Health Records</ComboBoxItem>
+                        <ComboBoxItem>Shared Patient</ComboBoxItem>
+                        <ComboBoxItem>Stopped Share Patient</ComboBoxItem>
+                        <ComboBoxItem>Updated Medical Staff Information</ComboBoxItem>
+                        <ComboBoxItem>Updated Patient Information</ComboBoxItem>
+                        <ComboBoxItem>Deleted Staff</ComboBoxItem>
+                        <ComboBoxItem>Logged in</ComboBoxItem>
+                    </ComboBox>
+
+                    <DatePicker x:Name="searchDateHistoryLog" Background="White" Width="186" Height="31" HorizontalAlignment="Left" Visibility="Hidden" VerticalAlignment="Top" Margin="402,35,-191.2,0" FontFamily="Century Gothic" Padding="6,6,2,2"/>
+                    <ComboBox Cursor="Hand" x:Name="timeFilterHistoryLog" Visibility="Hidden" HorizontalAlignment="Left" Margin="402,35,-191.2,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="historyComboBox" FontFamily="Century Gothic" Padding="8,8,0,0" SelectionChanged="timeFilterHistoryLog_SelectionChanged" >
+                        <ComboBoxItem>12:00 am</ComboBoxItem>
+                        <ComboBoxItem>01:00 am</ComboBoxItem>
+                        <ComboBoxItem>02:00 am</ComboBoxItem>
+                        <ComboBoxItem>03:00 am</ComboBoxItem>
+                        <ComboBoxItem>04:00 am</ComboBoxItem>
+                        <ComboBoxItem>05:00 am</ComboBoxItem>
+                        <ComboBoxItem>06:00 am</ComboBoxItem>
+                        <ComboBoxItem>07:00 am</ComboBoxItem>
+                        <ComboBoxItem>08:00 am</ComboBoxItem>
+                        <ComboBoxItem>09:00 am</ComboBoxItem>
+                        <ComboBoxItem>10:00 am</ComboBoxItem>
+                        <ComboBoxItem>11:00 am</ComboBoxItem>
+                        <ComboBoxItem>12:00 pm</ComboBoxItem>
+                        <ComboBoxItem>01:00 pm</ComboBoxItem>
+                        <ComboBoxItem>02:00 pm</ComboBoxItem>
+                        <ComboBoxItem>03:00 pm</ComboBoxItem>
+                        <ComboBoxItem>04:00 pm</ComboBoxItem>
+                        <ComboBoxItem>05:00 pm</ComboBoxItem>
+                        <ComboBoxItem>06:00 pm</ComboBoxItem>
+                        <ComboBoxItem>07:00 pm</ComboBoxItem>
+                        <ComboBoxItem>08:00 pm</ComboBoxItem>
+                        <ComboBoxItem>09:00 pm</ComboBoxItem>
+                        <ComboBoxItem>10:00 pm</ComboBoxItem>
+                        <ComboBoxItem>11:00 pm</ComboBoxItem>
+                    </ComboBox>
+                    <TextBox x:Name="searchPatientNameActivity"  HorizontalAlignment="Left" Margin="402,35,-191.2,0" Visibility="Hidden" VerticalAlignment="Top" Width="186" Height="31" FontFamily="Century Gothic" Padding="5,7,0,0"/>
+                    <Button FontFamily="Century Gothic" Cursor="Hand" x:Name="searchButtonHistoryLog" HorizontalAlignment="Left" Margin="657,35,-64,0" VerticalAlignment="Top" Width="95" Height="31" AutomationProperties.Name="searchButtonPatient" Click="searchButtonHistoryLog_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                            </Style>
+                        </Button.Resources>
+                        <DockPanel>
+                            <Image Source="search.png" Height="14" Width="20" RenderTransformOrigin="0.482,0.712" />
+                            <TextBlock TextAlignment="Center" FontWeight="Bold" Text="Search" />
+                        </DockPanel>
+                    </Button>
+                </Grid>
+
+                <Grid x:Name="healthFilters" VerticalAlignment="Top" Visibility="Visible" HorizontalAlignment="Left">
+                    <ComboBox Cursor="Hand" x:Name="filterComboBox" HorizontalAlignment="Left" Margin="211,35,0,0" Width="186" AutomationProperties.Name="historyComboBox" FontFamily="Century Gothic" Padding="8,8,0,0" SelectionChanged="filterComboBox_SelectionChanged" Height="31" VerticalAlignment="Top" >
+                        <ComboBoxItem>Patient Name</ComboBoxItem>
+                        <ComboBoxItem>Date Encoded</ComboBoxItem>
+                        <ComboBoxItem>Time Encoded</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBox x:Name="searchPatientNameHealth"  HorizontalAlignment="Left" Margin="402,35,0,0" VerticalAlignment="Top" Width="186" Height="31" FontFamily="Century Gothic" Padding="5,7,0,0"/>
+                    <DatePicker x:Name="searchDateHealth" Background="White" Width="186" Height="31" HorizontalAlignment="Left" Visibility="Hidden" VerticalAlignment="Top" Margin="402,35,0,0" FontFamily="Century Gothic" Padding="6,6,2,2"/>
+                    <ComboBox Cursor="Hand" x:Name="timeFilter" Visibility="Hidden" HorizontalAlignment="Left" Margin="402,35,0,0" VerticalAlignment="Top" Width="186" Height="31" AutomationProperties.Name="historyComboBox" FontFamily="Century Gothic" Padding="8,8,0,0" SelectionChanged="timeFilter_SelectionChanged" >
+                        <ComboBoxItem>12:00 am</ComboBoxItem>
+                        <ComboBoxItem>01:00 am</ComboBoxItem>
+                        <ComboBoxItem>02:00 am</ComboBoxItem>
+                        <ComboBoxItem>03:00 am</ComboBoxItem>
+                        <ComboBoxItem>04:00 am</ComboBoxItem>
+                        <ComboBoxItem>05:00 am</ComboBoxItem>
+                        <ComboBoxItem>06:00 am</ComboBoxItem>
+                        <ComboBoxItem>07:00 am</ComboBoxItem>
+                        <ComboBoxItem>08:00 am</ComboBoxItem>
+                        <ComboBoxItem>09:00 am</ComboBoxItem>
+                        <ComboBoxItem>10:00 am</ComboBoxItem>
+                        <ComboBoxItem>11:00 am</ComboBoxItem>
+                        <ComboBoxItem>12:00 pm</ComboBoxItem>
+                        <ComboBoxItem>01:00 pm</ComboBoxItem>
+                        <ComboBoxItem>02:00 pm</ComboBoxItem>
+                        <ComboBoxItem>03:00 pm</ComboBoxItem>
+                        <ComboBoxItem>04:00 pm</ComboBoxItem>
+                        <ComboBoxItem>05:00 pm</ComboBoxItem>
+                        <ComboBoxItem>06:00 pm</ComboBoxItem>
+                        <ComboBoxItem>07:00 pm</ComboBoxItem>
+                        <ComboBoxItem>08:00 pm</ComboBoxItem>
+                        <ComboBoxItem>09:00 pm</ComboBoxItem>
+                        <ComboBoxItem>10:00 pm</ComboBoxItem>
+                        <ComboBoxItem>11:00 pm</ComboBoxItem>
+                    </ComboBox>
+                    <Button FontFamily="Century Gothic" Cursor="Hand" x:Name="searchButtonHealthHistory" HorizontalAlignment="Left" Margin="593,35,0,0" VerticalAlignment="Top" Width="95" Height="31" AutomationProperties.Name="searchButtonPatient" Click="searchButtonHealthHistory_Click" >
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                            </Style>
+                        </Button.Resources>
+                        <DockPanel>
+                            <Image Source="search.png" Height="14" Width="20" RenderTransformOrigin="0.482,0.712" />
+                            <TextBlock TextAlignment="Center" FontWeight="Bold" Text="Search" />
+                        </DockPanel>
+                    </Button>
+                </Grid>
+
+
+                <!-- HISTORY log datagrid-->
+
+                <DataGrid ItemsSource="{Binding historyLogData}" BorderBrush="White" BorderThickness="2"  Background="White" HeadersVisibility="Column" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserResizeRows="False"  CanUserSortColumns="False" AutoGenerateColumns="False" x:Name="historyGridTable" Visibility="Visible" Margin="20,71,20,99.6" AutomationProperties.Name="historyGridTable" SelectionChanged="historyGridTable_SelectionChanged">
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="Control">
+                            <Setter Property="FontFamily" Value="Century Gothic" />
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="DarkGray"/>
+                            <Setter Property="Padding" Value="10, 5, 5, 5"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Padding" Value="10, 5, 5, 2"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.CellStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="log_id" FontFamily="Century Gothic" IsReadOnly="True" CanUserSort="False" CanUserResize="False" Header="History ID" Binding="{Binding history_id}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="*" Header="Staff Name" CanUserSort="False" Binding="{Binding staff_name}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="*" Header="Activity" CanUserSort="False" Binding="{Binding activity}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" CanUserSort="False" CanUserResize="False"  MinWidth="200" Width="Auto" Header="Date" Binding="{Binding dateStamp}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" CanUserSort="False" CanUserResize="False"  MinWidth="100" Width="Auto" Header="Time" Binding="{Binding timeStamp}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <!-- HISTORY log datagrid-->
+
+
+                <!-- HISTORY patient datagrid-->
+                <DataGrid BorderBrush="White" BorderThickness="2"  Background="White" HeadersVisibility="Column" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserResizeRows="False"  CanUserSortColumns="False" AutoGenerateColumns="False" x:Name="historyGridTablePatient" Visibility="Hidden" Margin="20,71,20,99.6" >
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="Control">
+                            <Setter Property="FontFamily" Value="Century Gothic" />
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="DarkGray"/>
+                            <Setter Property="Padding" Value="10, 5, 5, 5"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Padding" Value="10, 5, 5, 2"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.CellStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="patientID" Visibility="Visible" Header="ID" Binding="{Binding history_patient_id}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="*" CanUserSort="False" Header="Patient Name" Binding="{Binding history_patient_name}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Header="Gender" CanUserSort="False" CanUserResize="False" Binding="{Binding history_patient_gender}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" x:Name="address_dependent" Width="*" MinWidth="200" CanUserSort="False" Header="Address" Binding="{Binding history_patient_dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" x:Name="birthdate_dependent" Width="Auto" Visibility="Hidden" MinWidth="150" CanUserSort="False" Header="Birthdate" Binding="{Binding history_patient_dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" x:Name="number_dependent" Width="Auto" MinWidth="200" Visibility="Hidden" CanUserSort="False" Header="Number" Binding="{Binding history_patient_dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" x:Name="disease_dependent" Width="*" Visibility="Hidden" CanUserSort="False" Header="Disease" Binding="{Binding history_patient_dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" x:Name="deviceID_dependent" Width="Auto" MinWidth="150" Visibility="Hidden" CanUserSort="False" Header="Device ID" Binding="{Binding history_patient_dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" x:Name="room_dependent" Width="Auto" Visibility="Hidden" CanUserSort="False" Header="Room" Binding="{Binding history_patient_dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" x:Name="encoder_dependent" Width="*" Visibility="Hidden" CanUserSort="False" Header="Encoder Name" Binding="{Binding history_patient_dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" MinWidth="150" Header="Date Admitted" CanUserSort="False" CanUserResize="False" Binding="{Binding history_date_admit}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" MinWidth="150" Header="Date Dismissed" CanUserSort="False" CanUserResize="False" Binding="{Binding history_date_dismiss}"/>
+                        <DataGridTemplateColumn IsReadOnly="True" Header="View" CanUserSort="False" MinWidth="50" CanUserResize="False">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button FontFamily="Century Gothic" Name="btnView" Cursor="Hand" Click="btnViewPatientHistory_Click">
+                                        <DockPanel>
+                                            <Image Source="eyes.png" Height="18" Width="19"/>
+                                        </DockPanel>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <!-- HISTORY patient datagrid-->
+
+
+                <!-- HISTORY staff datagrid-->
+                <DataGrid BorderBrush="White" BorderThickness="2"  Background="White" HeadersVisibility="Column" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserResizeRows="False"  CanUserSortColumns="False" AutoGenerateColumns="False" x:Name="historyGridTableStaff" Visibility="Hidden" Margin="20,71,20,99.6" >
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="Control">
+                            <Setter Property="FontFamily" Value="Century Gothic" />
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="DarkGray"/>
+                            <Setter Property="Padding" Value="10, 5, 5, 5"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Padding" Value="10, 5, 5, 2"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.CellStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="staff_id" FontFamily="Century Gothic" IsReadOnly="True" Visibility="Visible" Header="ID" Binding="{Binding staff_id}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="Auto" CanUserSort="False" Header="Username" Binding="{Binding username}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Header="Gender" CanUserSort="False" CanUserResize="False" Binding="{Binding gender}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" x:Name="staff_address_dependent" IsReadOnly="True" Width="*" Header="Address" CanUserSort="False" Binding="{Binding dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" x:Name="staff_birthdate_dependent" IsReadOnly="True" Visibility="Hidden" Width="*" Header="Birthdate" MinWidth="150" CanUserSort="False" Binding="{Binding dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" x:Name="staff_number_dependent" IsReadOnly="True" Visibility="Hidden" Width="*" Header="Number" MinWidth="150" CanUserSort="False" Binding="{Binding dependent}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="Auto" MinWidth="150" Header="Date Registered" CanUserSort="False" Binding="{Binding date_registered}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="Auto" MinWidth="150" Header="Date Deleted" CanUserSort="False" Binding="{Binding date_deleted}"/>
+                        <DataGridTemplateColumn IsReadOnly="True" Header="View" CanUserSort="False" MinWidth="50" CanUserResize="False">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button FontFamily="Century Gothic" Name="btnView" Cursor="Hand" Click="btnViewStaff_Click">
+                                        <DockPanel>
+                                            <Image Source="eyes.png" Height="18" Width="19"/>
+                                        </DockPanel>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <!-- HISTORY staff datagrid-->
+
+                <!-- HISTORY health datagrid-->
+                <DataGrid BorderBrush="White" BorderThickness="2" Background="White" HeadersVisibility="Column" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserResizeRows="False"  CanUserSortColumns="False" AutoGenerateColumns="False" x:Name="historyGridTableHealth" Visibility="Hidden" Margin="20,71,20,99.6" >
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="Control">
+                            <Setter Property="FontFamily" Value="Century Gothic" />
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="DarkGray"/>
+                            <Setter Property="Padding" Value="10, 5, 5, 5"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Padding" Value="10, 5, 5, 2"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.CellStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="healthID" FontFamily="Century Gothic" IsReadOnly="True" Visibility="Visible" Header="ID" Binding="{Binding health_id}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="*" MinWidth="200" CanUserSort="False" Header="Patient Name" Binding="{Binding patient_name}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Header="Date" CanUserSort="False" Width="*" CanUserResize="False" Binding="{Binding date}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="*" Header="Time" MinWidth="200" CanUserSort="False" Binding="{Binding time}"/>
+                        <DataGridTemplateColumn IsReadOnly="True" Header="View" CanUserSort="False" MinWidth="50" CanUserResize="False">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button FontFamily="Century Gothic" Name="btnView" Cursor="Hand" Click="btnViewHealthLog_Click">
+                                        <Image Source="eyes.png" Height="18" Width="19"/>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <!-- HISTORY health datagrid-->
+                <Button Cursor="Hand" HorizontalAlignment="Left" Margin="508,0,0,34.6" VerticalAlignment="Bottom" Width="169" Height="36" Click="Button_Click_1" FontFamily="Century Gothic">
+                    <DockPanel>
+                        <Image Source="printer.png" Width="41" Height="22"/>
+                        <TextBlock Text="Print Report" FontFamily="Century Gothic" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" />
+                    </DockPanel>
+                </Button>
+
+            </Grid>
+            <!-- HISTORY END-->
+
+            <Grid x:Name="contactsGrid" AutomationProperties.Name="contactsGrid" Visibility="Hidden">
+                <ComboBox FontFamily="Century Gothic" Cursor="Hand" x:Name="comboBoxRoom" VerticalAlignment="Top" HorizontalAlignment="Left" Height="31" Width="186" Margin="26,36,0,0" SelectionChanged="ComboBox_SelectionChanged_1" Padding="8,8,0,0">
+                    <ComboBoxItem>Room Number</ComboBoxItem>
+                    <ComboBoxItem>Status</ComboBoxItem>
+                    <ComboBoxItem>Current User Name</ComboBoxItem>
+                </ComboBox>
+                <TextBox Visibility="Visible" x:Name="roomUser" Height="31" Width="186" Margin="217,36,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5,7,0,0" FontFamily="Century Gothic"/>
+                <TextBox Visibility="Hidden" PreviewTextInput="TypeNumericValidation" x:Name="roomNumber"  Height="31" Width="186" Margin="217,36,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5,7,0,0" FontFamily="Century Gothic"/>
+                <ComboBox FontFamily="Century Gothic" Cursor="Hand" x:Name="roomStatus" Visibility="Hidden" Height="31" Width="186" Margin="217,36,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" SelectionChanged="roomStatus_SelectionChanged" Padding="8,8,0,0">
+                    <ComboBoxItem>Available</ComboBoxItem>
+                    <ComboBoxItem>Not Available</ComboBoxItem>
+                </ComboBox>
+                <Button FontFamily="Century Gothic" Cursor="Hand" x:Name="searchButtonRoom" HorizontalAlignment="Left" Margin="408,36,0,0" VerticalAlignment="Top" Width="95" Height="31" Click="searchButtonRoom_Click" >
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                        </Style>
+                    </Button.Resources>
+                    <DockPanel>
+                        <Image Source="search.png" Height="14" Width="20" RenderTransformOrigin="0.482,0.712" />
+                        <TextBlock TextAlignment="Center" FontWeight="Bold" Text="Search" />
+                    </DockPanel>
+                </Button>
+
+                <Button Cursor="Hand" x:Name="addRoom" Margin="0,37,461,0" VerticalAlignment="Top" Height="31" AutomationProperties.Name="registerStaff" HorizontalAlignment="Right" Width="127" FontFamily="Century Gothic" Click="addRoom_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="7,7,7,7"/>
+                        </Style>
+                    </Button.Resources>
+                    <DockPanel>
+                        <Image Source="operating-room.png" Height="21" Width="34" />
+                        <TextBlock FontWeight="Bold" Text="Add room" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </DockPanel>
+                </Button>
+                <DataGrid Background="White" HeadersVisibility="Column" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserResizeRows="False"  CanUserSortColumns="False" AutoGenerateColumns="False" x:Name="roomGrid" HorizontalAlignment="Left" Height="552" Margin="26,72,0,0" VerticalAlignment="Top" Width="673">
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="Control">
+                            <Setter Property="FontFamily" Value="Century Gothic" />
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="DarkGray"/>
+                            <Setter Property="Padding" Value="10, 5, 5, 5"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Padding" Value="10, 5, 5, 2"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.CellStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="*" MinWidth="200" CanUserSort="False" Header="Room Number" Binding="{Binding room_number}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Header="Status" CanUserSort="False" Width="*" CanUserResize="False" Binding="{Binding room_status}"/>
+                        <DataGridTextColumn FontFamily="Century Gothic" IsReadOnly="True" Width="*" Header="Current User" MinWidth="200" CanUserSort="False" Binding="{Binding current_user}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Grid Background="White" VerticalAlignment="Top" HorizontalAlignment="Left" Height="552" Width="401" Margin="723,72,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="53*"></RowDefinition>
+                        <RowDefinition Height="85*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image Source="hospital.png" Stretch="Fill" Margin="134,35,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="132" Width="145" />
+                    <Grid Grid.Row="1">
+                        <Label Content="Hospital Information" FontStyle="Italic" FontFamily="Century Gothic" FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="21,0,0,0" />
+                        <Grid Background="DarkGray" Height="1" VerticalAlignment="Top" Margin="21,22,0,0" Width="355" HorizontalAlignment="Left"/>
+                        <Label FontFamily="Century Gothic" Content="Hospital name: " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,35,0,0" FontWeight="Bold" />
+                        <Label FontFamily="Century Gothic" Content="Address: " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,73,0,0" FontWeight="Bold" />
+                        <TextBox Visibility="Hidden" x:Name="hospitalNameTextBox" Width="232" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,34,0,0" FontFamily="Century Gothic" Padding="5,7,0,0"/>
+                        <TextBox Visibility="Hidden" x:Name="addressTextBox" TextWrapping="Wrap" AcceptsReturn="True"  Width="232" Height="89" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,67,0,0" FontFamily="Century Gothic" Padding="5,7,0,0"/>
+                        <TextBox Visibility="Hidden" x:Name="hospitalEmailTextBox" Width="232" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,163,0,0" FontFamily="Century Gothic" Padding="5,7,0,0"/>
+                        <DatePicker Visibility="Hidden" x:Name="hospitalDateTextBox" Width="232" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,197,0,0" FontFamily="Century Gothic" Padding="5,5,0,0"/>
+                        <Label Visibility="Hidden" x:Name="edited" FontFamily="Century Gothic" Content="Email Address: " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,164,0,0" FontWeight="Bold" />
+                        <Label Visibility="Visible" x:Name="notEdited"  FontFamily="Century Gothic" Content="Email Address: " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,110,0,0" FontWeight="Bold" />
+                        <Label Visibility="Hidden" x:Name="editedDate" FontFamily="Century Gothic" Content="Date acquired: " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="27,198,0,0" FontWeight="Bold" />
+                        <Label Visibility="Visible" x:Name="notEditedDate" FontFamily="Century Gothic" Content="Date acquired: " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="27,148,0,0" FontWeight="Bold" />
+                        <TextBlock FontFamily="Century Gothic" x:Name="hospitalNameText" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,40,0,0"/>
+                        <TextBlock FontFamily="Century Gothic" x:Name="hospitalAddressText" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,77,0,0"/>
+                        <TextBlock FontFamily="Century Gothic" x:Name="hospitalEmailText" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,115,0,0"/>
+                        <TextBlock FontFamily="Century Gothic" x:Name="dateText" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,153,0,0"/>
+
+                        <Button Visibility="Visible" x:Name="editHospitalInfo" Cursor="Hand" Background="#0EB021" Foreground="White" FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="93,273,0,0" VerticalAlignment="Top" Width="230" Height="32" AutomationProperties.Name="editPatientInfo" Click="editHospitalInfo_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                            <DockPanel>
+                                <Image Source="hospital.png" Height="21" Width="24" Margin="0,0,5,0" />
+                                <TextBlock Text="Edit Hospital Information" VerticalAlignment="Center" Margin="0" />
+                            </DockPanel>
+                        </Button>
+                        <Button x:Name="saveInfo" Visibility="Hidden" Cursor="Hand" Background="#0EB021" Foreground="White" FontFamily="Century Gothic"  HorizontalAlignment="Left" Margin="44,273,0,0" VerticalAlignment="Top" Width="150" Height="32" Click="saveInfo_Click" >
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                            <DockPanel>
+                                <Image Source="save.png" Height="15" Width="24" Margin="-13,0,5,0" />
+                                <TextBlock Text="Save" VerticalAlignment="Center" />
+                            </DockPanel>
+                        </Button>
+                        <Button x:Name="cancel" Visibility="Hidden" Cursor="Hand" Background="Red" Foreground="White" FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="208,273,0,0" VerticalAlignment="Top" Width="150" Height="32" Click="cancel_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                            <DockPanel>
+                                <Image Source="cancel.png" Height="10" Width="24" Margin="-3,0,5,0" />
+                                <TextBlock Text="Cancel" VerticalAlignment="Center" />
+                            </DockPanel>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+
+            <Grid x:Name="aboutGrid" AutomationProperties.Name="aboutGrid" Visibility="Hidden">
+                <Grid Background="White" Margin="39.6">
+                    <Image Source="applicationLogo.png" Margin="328,3,328.8,265.4" />
+                    <TextBlock TextAlignment="Center" TextWrapping="Wrap" Text="Smart Care Android Application aims to provide a better way of patient monitoring within the hospital facilities in such a way that, doctos and nurses can able to monitor patient via real-time using the app and send an alert message via call or text if there is an emergency. The goal of this Android Smart Care Application is to ease the burden of medical staff when it comes to patient monitoring. App is only accessible within the hospital and outside from that will unable you to open the app, this is to protect the data within the hospital." Margin="65,292,66.8,165.4" FontFamily="Century Gothic" FontSize="17" Height="117" VerticalAlignment="Center" />
+                    <TextBlock Text="Download Smart Care Application" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Century Gothic" Margin="446,439,0,0" FontStyle="Italic" />
+                    <Grid Background="DarkGray" Height="1" VerticalAlignment="Top" Margin="320,461,314.8,0"/>
+
+                    <Button Visibility="Visible" x:Name="editInfo" Cursor="Hand" Background="#0EB021" Foreground="White" FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="432,471,0,0" VerticalAlignment="Top" Width="230" Height="36">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="7"/>
+                            </Style>
+                        </Button.Resources>
+                        <DockPanel>
+                            <Image Source="mobile-phone.png" Height="21" Width="24" Margin="0,0,2,0" />
+                            <TextBlock Text="Download now" VerticalAlignment="Center" />
+                        </DockPanel>
+                    </Button>
+                </Grid>
+            </Grid>
+
+        </Grid>
+        <!-- MAIN end -->
+
+    </Grid>
+</Window>

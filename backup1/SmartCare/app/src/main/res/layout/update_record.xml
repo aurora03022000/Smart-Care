@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/scrollView">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/editrecords"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Edit Records"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/pulse"/>
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:text="Bpm"-->
+<!--                            android:textSize="15dp"-->
+<!--                            -->
+<!--                            android:fontFamily="@font/poppinsmedium"-->
+<!--                            android:gravity="center"/>-->
+                        <EditText
+                            android:id="@+id/pulse"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/register_input_layout"
+                            android:inputType="text"
+                            android:hint="Pulse rate"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/oxygen_saturation"/>
+                        <EditText
+                            android:id="@+id/oxygen"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/register_input_layout"
+                            android:inputType="text"
+                            android:hint="Oxygen saturation"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/temperature"/>
+                        <EditText
+                            android:id="@+id/bodyTemperature"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/register_input_layout"
+                            android:inputType="text"
+                            android:hint="Body temperature"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/blood_pressure"/>
+                        <EditText
+                            android:id="@+id/bloodPressure"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/register_input_layout"
+                            android:inputType="text"
+                            android:hint="Blood pressure"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/respiratory"/>
+                        <EditText
+                            android:id="@+id/respiratoryRate"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/register_input_layout"
+                            android:inputType="text"
+                            android:hint="Respiratory rate"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/thermometer"/>
+                        <EditText
+                            android:id="@+id/roomTemperature"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="12dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/register_input_layout"
+                            android:inputType="text"
+                            android:hint="Room temperature"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp"  />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/humidity"/>
+                        <EditText
+                            android:id="@+id/humidity"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/register_input_layout"
+                            android:inputType="text"
+                            android:hint="Humidity"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp"  />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/wind"/>
+                        <EditText
+                            android:id="@+id/airQuality"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/register_input_layout"
+                            android:inputType="text"
+                            android:hint="Air quality"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp"  />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:id="@+id/saveBtn"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:background="@drawable/register_button_layout">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/patient_save_icon"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppinsbold"
+                                android:gravity="center"
+                                android:text="Save"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/cancelBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:background="@drawable/cancel_layout">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/cancel_icon"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:id="@+id/submitContact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppinsbold"
+                                android:gravity="center"
+                                android:text="Cancel"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--    </android.support.design.widget.TextInputLayout>-->
+</FrameLayout>

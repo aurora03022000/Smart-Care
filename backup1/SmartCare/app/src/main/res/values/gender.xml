@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array  name="genders">
+        <item><font fgcolor='#000000'> Male </font></item>
+        <item><font fgcolor='#000000'> Female </font></item>
+    </string-array>
+</resources>

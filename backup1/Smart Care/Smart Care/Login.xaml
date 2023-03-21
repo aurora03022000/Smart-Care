@@ -1,0 +1,43 @@
+﻿<Window x:Class="Smart_Care.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smart_Care"
+        mc:Ignorable="d"
+        Title="Login" Height="396.964" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="198*"></ColumnDefinition>
+            <ColumnDefinition Width="167*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Background="#0EB021">
+            <Image Source="/backgroundLogin.jpg" Opacity="0.08" Stretch="Fill" />
+            <Grid>
+                <Image Source="/applicationLogo.png" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Height="157" Width="169" Margin="0,-32,0,0" />
+                <TextBlock Text="Smart Care" FontSize="20" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="12,118,0,0" FontFamily="Century Gothic" />
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Image Source="/loginUser.png" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" Height="54" Width="55" Margin="160,34,148.2,273.2" />
+            <TextBlock Text="Login to Smart Care" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,-162,0,0" FontWeight="Normal" FontFamily="Century Gothic"/>
+            <TextBlock Text="Username" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-153,-75,0,0" FontFamily="Century Gothic" />
+            <TextBox x:Name="usernameTextBox" HorizontalAlignment="Center" Margin="5,-26,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="207" Height="33" Padding="5,8,0,0" AutomationProperties.Name="usernameTextBox" FontFamily="Century Gothic"/>
+            <TextBlock Text="Password" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-159,30,0,0" FontFamily="Century Gothic" />
+            <PasswordBox x:Name="passwordTextBox" HorizontalAlignment="Center" Margin="5,79,0,0" VerticalAlignment="Center" Width="206" Height="33" Padding="5,8,0,0" AutomationProperties.Name="passwordTextBox" FontFamily="Century Gothic"/>
+            <Button Background="#0EB021" Foreground="White" x:Name="loginButton" Cursor="Hand" HorizontalAlignment="Center" Margin="5,192,0,0" FontSize="11" VerticalAlignment="Center" Width="113" Height="27" FontWeight="Normal" AutomationProperties.Name="loginButton" Click="loginButton_Click" FontFamily="Century Gothic">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+                <DockPanel>
+                    <Image Source="key.png" Height="21" Width="24" Margin="-7,0,5,0" />
+                    <TextBlock Text="Login" VerticalAlignment="Center" />
+                </DockPanel>
+            </Button>
+            <TextBlock Text="Version 1.0" FontSize="10" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,0,4" FontFamily="Century Gothic"/>
+        </Grid>
+    </Grid>
+</Window>

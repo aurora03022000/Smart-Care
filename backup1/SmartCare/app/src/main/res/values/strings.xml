@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Monitor Patient</string>
+    <string name="about_us_description">
+        Smart Care Application is a health care monitoring application that uses IoT monitoring devices
+        to monitor patient health status and as well as the room condition. This application tends to lessen the burden
+        of medical practitioners upon monitoring their patient time by time without having to go directly to the
+        patient room and monitor them, just simply looking unto the application they can able to monitor patient and room status real-time.
+    </string>
+
+    <string name="about_developer_description">
+         The developers of this application is a student from Notre Dame of Marbel University in compliance for their capstone thesis projects.
+        Namely they are Marlou C. Antenero, Mea Gwen B. Gulle, and James Lloyd G. Teker taking a course of Bachelor of Science in Information Technology.
+    </string>
+
+    <string name="ipaddress">
+         192.168.43.66:4433
+    </string>
+
+    <string name="footer">
+        @ All Rights Reserved 2022 Smart Care Solution
+    </string>
+    <string name="title_activity_home1">Home1</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

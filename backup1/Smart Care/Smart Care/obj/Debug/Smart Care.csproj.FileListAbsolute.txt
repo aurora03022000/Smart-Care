@@ -1,0 +1,195 @@
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Smart Care.exe.config
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Smart Care.exe
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Smart Care.pdb
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.AssemblyReference.cache
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\App.g.cs
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care_MarkupCompile.cache
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care_MarkupCompile.lref
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.g.resources
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart_Care.Properties.Resources.resources
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.GenerateResource.cache
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.CoreCompileInputs.cache
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.exe
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.pdb
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\MySql.Data.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Google.Protobuf.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\ZstdNet.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\BouncyCastle.Crypto.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Ubiety.Dns.Core.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\System.Memory.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\System.Buffers.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\K4os.Compression.LZ4.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\K4os.Hash.xxHash.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\System.Numerics.Vectors.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\MySql.Data.xml
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.exe.config
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.CopyComplete
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\EnvDTE.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\EnvDTE80.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\VSLangProj.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.Shell.Design.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.TextTemplating.Interfaces.11.0.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.Shell.Framework.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.Shell.15.0.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\stdole.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.Build.Framework.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.RpcContracts.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\System.Collections.Immutable.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\System.IO.Pipelines.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.MSXML.dll
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.xml
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+C:\Smart Care\Smart Care\Smart Care\bin\Debug\Microsoft.VisualStudio.GraphModel.xml
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Login.g.cs
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Login.baml
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Home.g.cs
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\Home.baml
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\userAccount.g.cs
+C:\Smart Care\Smart Care\Smart Care\obj\Debug\userAccount.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\Smart Care.exe.config
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\Smart Care.exe
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\Smart Care.pdb
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\MySql.Data.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\Google.Protobuf.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\ZstdNet.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\System.Memory.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\System.Buffers.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\bin\Debug\MySql.Data.xml
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.csprojAssemblyReference.cache
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.exe.config
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Home.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Login.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\userAccount.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\App.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care_MarkupCompile.cache
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care_MarkupCompile.lref
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Home.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Login.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\userAccount.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.g.resources
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart_Care.Properties.Resources.resources
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.GenerateResource.cache
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.CoreCompileInputs.cache
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.CopyComplete
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.exe
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\Smart Care.pdb
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\RegisterDevice.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\Smart Care\obj\Debug\RegisterDevice.baml
+C:\Smart Care\Smart Care\bin\Debug\Smart Care.exe.config
+C:\Smart Care\Smart Care\bin\Debug\Smart Care.exe
+C:\Smart Care\Smart Care\bin\Debug\Smart Care.pdb
+C:\Smart Care\Smart Care\bin\Debug\MySql.Data.dll
+C:\Smart Care\Smart Care\bin\Debug\Google.Protobuf.dll
+C:\Smart Care\Smart Care\bin\Debug\ZstdNet.dll
+C:\Smart Care\Smart Care\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Smart Care\Smart Care\bin\Debug\BouncyCastle.Crypto.dll
+C:\Smart Care\Smart Care\bin\Debug\Ubiety.Dns.Core.dll
+C:\Smart Care\Smart Care\bin\Debug\System.Memory.dll
+C:\Smart Care\Smart Care\bin\Debug\System.Buffers.dll
+C:\Smart Care\Smart Care\bin\Debug\K4os.Compression.LZ4.dll
+C:\Smart Care\Smart Care\bin\Debug\K4os.Hash.xxHash.dll
+C:\Smart Care\Smart Care\bin\Debug\System.Numerics.Vectors.dll
+C:\Smart Care\Smart Care\bin\Debug\MySql.Data.xml
+C:\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.AssemblyReference.cache
+C:\Smart Care\Smart Care\obj\Debug\Smart Care.exe.config
+C:\Smart Care\Smart Care\obj\Debug\Home.g.cs
+C:\Smart Care\Smart Care\obj\Debug\Login.g.cs
+C:\Smart Care\Smart Care\obj\Debug\RegisterDevice.g.cs
+C:\Smart Care\Smart Care\obj\Debug\userAccount.g.cs
+C:\Smart Care\Smart Care\obj\Debug\App.g.cs
+C:\Smart Care\Smart Care\obj\Debug\Smart Care_MarkupCompile.cache
+C:\Smart Care\Smart Care\obj\Debug\Smart Care_MarkupCompile.lref
+C:\Smart Care\Smart Care\obj\Debug\Home.baml
+C:\Smart Care\Smart Care\obj\Debug\Login.baml
+C:\Smart Care\Smart Care\obj\Debug\RegisterDevice.baml
+C:\Smart Care\Smart Care\obj\Debug\userAccount.baml
+C:\Smart Care\Smart Care\obj\Debug\Smart Care.g.resources
+C:\Smart Care\Smart Care\obj\Debug\Smart_Care.Properties.Resources.resources
+C:\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.GenerateResource.cache
+C:\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.CoreCompileInputs.cache
+C:\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.CopyComplete
+C:\Smart Care\Smart Care\obj\Debug\Smart Care.exe
+C:\Smart Care\Smart Care\obj\Debug\Smart Care.pdb
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\Smart Care.exe.config
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\Smart Care.exe
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\Smart Care.pdb
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\MySql.Data.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\Google.Protobuf.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\ZstdNet.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\System.Memory.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\System.Buffers.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\james\source\repos\Smart Care\Smart Care\bin\Debug\MySql.Data.xml
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care.csprojAssemblyReference.cache
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care.exe.config
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Home.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Login.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\RegisterDevice.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\userAccount.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\App.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care_MarkupCompile.cache
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care_MarkupCompile.lref
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Home.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Login.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\RegisterDevice.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\userAccount.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care.g.resources
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart_Care.Properties.Resources.resources
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.GenerateResource.cache
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.CoreCompileInputs.cache
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care.csproj.CopyComplete
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care.exe
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\Smart Care.pdb
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\RegisterStaff.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\RegisterStaff.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\RegisterPatient.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\RegisterPatient.baml
+C:\Smart Care\Smart Care\obj\Debug\RegisterPatient.g.cs
+C:\Smart Care\Smart Care\obj\Debug\RegisterStaff.g.cs
+C:\Smart Care\Smart Care\obj\Debug\RegisterPatient.baml
+C:\Smart Care\Smart Care\obj\Debug\RegisterStaff.baml
+C:\Smart Care\Smart Care\obj\Debug\App.baml
+C:\Smart Care\Smart Care\obj\Debug\staffInformation.g.cs
+C:\Smart Care\Smart Care\obj\Debug\staffInformation.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\staffInformation.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\App.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\staffInformation.baml
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\patientinformation.g.cs
+C:\Users\james\source\repos\Smart Care\Smart Care\obj\Debug\patientinformation.baml
+C:\Smart Care\Smart Care\obj\Debug\patientinformation.g.cs
+C:\Smart Care\Smart Care\obj\Debug\patientinformation.baml
+C:\Smart Care\Smart Care\obj\Debug\encoderSearch.g.cs
+C:\Smart Care\Smart Care\obj\Debug\encoderSearch.baml
+C:\Smart Care\Smart Care\obj\Debug\sharePatient.g.cs
+C:\Smart Care\Smart Care\obj\Debug\sharePatient.baml
+C:\Smart Care\Smart Care\obj\Debug\patientHealthInformation.g.cs
+C:\Smart Care\Smart Care\obj\Debug\patientHealthInformation.baml
+C:\Smart Care\Smart Care\obj\Debug\registerRoom.g.cs
+C:\Smart Care\Smart Care\obj\Debug\registerRoom.baml

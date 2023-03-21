@@ -1,0 +1,27 @@
+﻿<Window x:Class="Smart_Care.hospitalName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smart_Care"
+        mc:Ignorable="d"
+        Title="hospitalName" Height="552.263" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Margin="0,0,-0.4,10">
+            <Image Source="hospital.png" Margin="268,70,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Stretch="Fill" Width="257" Height="226" />
+            <Label Content="Hospital Name" FontSize="15" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Bold" Margin="338,312,0,0" Height="26" />
+            <ComboBox x:Name="hospitalName1" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="242,343,0,0" Width="304" Height="32" Padding="5,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" SelectionChanged="hospitalName1_SelectionChanged" />
+            <Button Background="#0EB021" Foreground="White" x:Name="proceedBtn" Cursor="Hand" HorizontalAlignment="Left" Margin="298,405,0,0" FontSize="11" VerticalAlignment="Top" Width="190" Height="29" FontWeight="Normal" AutomationProperties.Name="loginButton" FontFamily="Century Gothic" Click="proceedBtn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+                <DockPanel>
+                    <Image Source="arrow-right (1).png" Height="21" Width="24" Margin="-7,0,5,0" />
+                    <TextBlock Text="Proceed" VerticalAlignment="Center" />
+                </DockPanel>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

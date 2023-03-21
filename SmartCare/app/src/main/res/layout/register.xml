@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/customize_green"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/registerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/subtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerText"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:gravity="center"
+                android:text="Register patient for smart health monitoring"
+                android:textColor="@color/white"
+                android:textSize="13dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/wave"
+            android:orientation="vertical" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/wave"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <EditText
+                    android:id="@+id/nameInputRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableRight="@drawable/name_icon_register"
+                    android:drawablePadding="10dp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/genderInputRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableRight="@drawable/gender"
+                    android:drawablePadding="10dp"
+                    android:hint="Gender"
+                    android:inputType="text"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/mobileNumberInputRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableRight="@drawable/phone"
+                    android:drawablePadding="10dp"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/birthdateInputRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableRight="@drawable/date"
+                    android:drawablePadding="10dp"
+                    android:hint="Birth Date"
+                    android:inputType="date"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16dp"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+
+                <EditText
+                    android:id="@+id/ageInputRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableRight="@drawable/age"
+                    android:drawablePadding="10dp"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/addressInputRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableRight="@drawable/address"
+                    android:drawablePadding="10dp"
+                    android:hint="Addresss"
+                    android:inputType="text"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/deviceIDInputRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableRight="@drawable/device"
+                    android:drawablePadding="10dp"
+                    android:hint="Device ID"
+                    android:inputType="number"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/roomInputRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableRight="@drawable/room"
+                    android:drawablePadding="10dp"
+                    android:hint="Room Number"
+                    android:inputType="number"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16dp" />
+                <Button
+                    android:id="@+id/buttonRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/button_layout"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Register Patient"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginBottom="0dp">
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="cancelLabel"
+                        android:textColor="@color/customize_green"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Cancel"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>

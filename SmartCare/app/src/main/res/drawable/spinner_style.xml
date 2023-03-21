@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:left="-20dp" android:right="-5dp"
+                android:top="-2dp" android:bottom="0dp" android:hint="Gender">
+                <shape>
+                    <solid android:color="@color/white" />
+                    <solid android:radius="10dp" />
+                    <solid android:right="10dp"/>
+                    <corners android:radius="5dp" />
+                    <stroke android:color="@color/hint"  android:width="1dp"/>
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="center|end"  android:src="@drawable/gender" />
+            </item>
+        </layer-list>
+    </item>
+</selector>
